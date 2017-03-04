@@ -1,0 +1,34 @@
+{
+     "Name": "Swaroop Gembali",
+	 "address": {
+                    "addressline": "1115 NorthMarket street",
+                    "city": "Houston",
+                    "state": "Texas",
+                    "zipcode": 67543
+                },
+	 
+	 
+	 
+	 "Accounts" : [
+                    {
+                     "id": 564357,
+                     "type": "Checking",
+                     "balance": 9999.99,
+                     "status": "OPEN"
+                    },
+                    {
+                     "id": 673289,
+                     "type": "Checking",
+                     "balance": 5674.87,
+                     "status": "OPEN"
+
+                     }],
+             "Transaction": [
+                        {
+                         "id": 213567786,
+                         "date": "12/25/2016",
+                         "amount": 8766.89,
+                         "type": "CREDIT"
+                        }
+                        ]
+}

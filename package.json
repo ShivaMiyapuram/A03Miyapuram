@@ -1,0 +1,19 @@
+{   "name": "nodemail",
+    "version": "1.0.0",
+    "description": "sending emails from mailgun.com",
+    "main": "index.js",
+    "dependencies": {
+        "express": "latest",
+        "body-parser": "latest",
+        "ejs": "latest",
+        "twilio": "latest",
+        "mailgun-js":"latest"
+    },
+    "author": "ShivaTeja",
+    "homepage": "https://bitbucket.org/professorcase/m07",
+    "repository": {
+        "type": "git",
+        "url": "https://bitbucket.org/professorcase/m07"
+    },
+     "license": "Apache-2.0"
+}

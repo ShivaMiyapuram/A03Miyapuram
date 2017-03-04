@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        
+        
+    </head>    
+    <body style="overflow-x: hidden">
+        
+        <nav class="navbar navbar-inverse">
+                   <div class="container-fluid">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="#">SHIVATEJA</a>
+                        </div>
+                        <div>
+                            <ul class="nav navbar-nav" >
+                                <li ><a href="Home">Home</a></li>
+                                <li class="active"><a href="Convertorpage">Convertor</a></li>
+                                <li><a href="Contactpage">Contact</a></li>
+                                <li><a href="index">Guestbook</a></li>
+                            </ul> 
+                        </div>  
+                                 
+          </nav>
+        <div class="container-fluid">
+        <h2> <center>Basic Conversions </center></h2>
+        <h5> <center>from US standard units to Indian standard units of measurement </center></h5>
+        </div>
+        
+    <div class="col-md-3">
+       <label for="usr">Enter the amount in $: </label>
+      <input class="form-control" id="usd" type="text" value="">
+        <button class="btn btn-primary btn-md" type="submit" onclick="Currencyconv()"> Convert </button>
+        <br><h3 id="currency" >  </h3>
+    </div>
+        
+        
+        
+    <div class="col-md-3">
+        <label for="usr">Enter weight in lbs: </label>
+      <input class="form-control"  id="pounds" type="text">
+        <button class="btn btn-primary btn-md" type="submit" onclick="Weightconv()"> Convert </button>
+        <h3 class="container" id="weight">  </h3>
+    </div>
+        
+        
+        
+    <div class="col-md-3">
+        <label for="usr">Enter distance in miles: </label>
+      <input class="form-control" id="mil" type="text">
+        <button class="btn btn-primary btn-md"  onclick="Distconv()" type="submit"> Convert </button>
+        <h3 class="container" id="distance"> </h3>
+    </div>
+        
+        
+        
+    <div class="col-md-3">
+        <label for="usr" >Enter Volume in gallons: </label>
+      <input class="form-control" id="gal" type="text" value="">
+        <button class="btn btn-primary btn-md"  type="submit" onclick="Volumeconv()"> Convert </button><br>
+        <h3 class="container" id="volume">  </h3>
+    </div>
+            
+        <script>
+            function Currencyconv(){
+                    var usd_input = document.getElementById("usd").value;
+                    if (isNaN(usd_input) || usd_input < 0) {
+                        $("#currency").html("Invalid input");
+                    }
+                    else{
+                    var inr = usd_input * 67.20;
+                    
+                    document.getElementById("currency").innerHTML= "Rs." + Math.round(inr);
+                    }
+            }
+            
+            function Volumeconv(){
+                
+                    var gal_input = document.getElementById("gal").value;
+                if (isNaN(gal_input) || gal_input < 0 ) {
+                        $("#volume").html("Invalid input");
+                    }
+                else{
+                    var lit = gal_input * 3.78;
+                    document.getElementById("volume").innerHTML= "Litres: " + lit + Math.round(lit);
+                    }
+            }
+            
+            function Weightconv(){
+                    var lb = document.getElementById("pounds").value;
+                 if (isNaN(lb) || lb < 0 ) {
+                        $("#weight").html("Invalid input");
+                    }
+                else{
+                    var kg = lb * 0.45;
+                    document.getElementById("weight").innerHTML= "Kg: " + kg + Math.round(kg);
+                }
+                
+            }
+            
+             function Distconv(){
+                    var mile = document.getElementById("mil").value;
+                 
+                     if (isNaN(mile) || mile < 0 ) {
+                        $("#distance").html("Invalid input");
+                    }
+                else{
+                    var km = mile * 1.60;
+                    document.getElementById("distance").innerHTML= "Kms: " + km + Math.round(km);
+                }
+            }
+        </script>
+    
+        
+    </body>
+
+</html>

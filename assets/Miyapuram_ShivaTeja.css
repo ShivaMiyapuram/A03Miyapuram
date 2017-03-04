@@ -1,0 +1,47 @@
+
+h3.center{
+    
+    text-align: center
+}
+
+#link2{
+    font-family: sans-serif;
+}
+
+
+p.para1
+{
+	font-family: georgia; 
+	font-size: 14px;
+    text-align: center;
+}
+
+p.para2
+{
+	font-family: georgia; 
+	font-size: 15px;
+    text-align: center;
+    
+}
+
+#link1{
+    font-family: sans-serif;
+}
+
+h3 {
+    border: 1px ;
+    padding: 10px;
+	border-radius: 5px;
+	background-color: powderblue;
+}
+
+ul { 
+	display: inline-block; 
+    text-align: left; 
+}
+
+div { 
+    text-align: center;
+    font-family: georgia; 
+	font-size: 14px;
+}
